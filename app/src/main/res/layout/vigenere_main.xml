@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vigenereTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1f2064"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal|center"
+            android:singleLine="true"
+            android:text="Vigenere Cipher"
+            android:textColor="#ffffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/vigenereBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_button_selector"
+            android:drawableLeft="@drawable/back_arrow"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="Return"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/vigenereActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/vigenereRadioGroup"
+        android:layout_below="@+id/vigenereTitleBar"
+        >
+    </FrameLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/vigenereRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#acadb6"
+        >
+
+        <RadioButton
+            android:id="@+id/vigenereCipherRadioBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/cipher_tab_selector"
+            android:layout_gravity="center"
+            android:text="Cipher"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/vigenereIntroRadioBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/intro_tab_selector"
+            android:layout_gravity="center"
+            android:text="Introduction"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            />
+
+    </RadioGroup>
+
+
+
+
+
+</RelativeLayout>
