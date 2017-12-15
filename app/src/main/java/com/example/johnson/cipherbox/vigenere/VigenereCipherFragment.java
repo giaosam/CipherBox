@@ -1,7 +1,6 @@
 package com.example.johnson.cipherbox.vigenere;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -11,12 +10,10 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.example.johnson.cipherbox.R;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * Created by johnson on 17-12-14.

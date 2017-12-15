@@ -23,7 +23,6 @@ public class VigenereActivity extends AppCompatActivity implements View.OnClickL
     private VigenereCipherFragment cipherFragment;
     private VigenereIntroFragment introFragment;
 
-    private FrameLayout vigenereActivityLayout;
     private RadioButton cipherRadioBtn;
     private RadioButton introRadioBtn;
     private Button vigenereBackBtn;
@@ -75,8 +74,6 @@ public class VigenereActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void init() {
-        vigenereActivityLayout = findViewById(R.id.vigenereActivityLayout);
-
         cipherRadioBtn = findViewById(R.id.vigenereCipherRadioBtn);
         introRadioBtn = findViewById(R.id.vigenereIntroRadioBtn);
         vigenereBackBtn = findViewById(R.id.vigenereBackBtn);
@@ -102,6 +99,4 @@ public class VigenereActivity extends AppCompatActivity implements View.OnClickL
         if(introFragment != null)
             transaction.hide(introFragment);
     }
-
-
 }
