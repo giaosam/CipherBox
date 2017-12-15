@@ -9,24 +9,42 @@
     android:layout_margin="20dp"
     tools:context="com.example.johnson.cipherbox.MainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo_round"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cipher Box"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        android:layout_marginBottom="30dp"/>
+
     <Button
         android:id="@+id/vigenereEntryBtn"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="75dp"
         android:layout_margin="20dp"
         android:text="vigenere Cipher"
+        android:textColor="@color/colorWhite"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:background="@drawable/normal_button_selector"
         />
 
     <Button
         android:id="@+id/routeEntryBtn"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="75dp"
         android:layout_margin="20dp"
         android:text="route Cipher"
+        android:textColor="@color/colorWhite"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:background="@drawable/normal_button_selector"
         />
 
 

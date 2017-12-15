@@ -1,6 +1,8 @@
 package com.example.johnson.cipherbox.vigenere;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -14,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.johnson.cipherbox.R;
+import com.example.johnson.cipherbox.Utils;
 
 /**
  * Created by johnson on 17-12-14.
@@ -83,14 +86,13 @@ public class VigenereCipherFragment extends Fragment implements View.OnClickList
     private void vigenereEncrypt(String plainText, String key) {
 
         if(plainText.equals("")) {
-            vigenereResultText.setText("Please Enter The Plaintext First!!!");
+            Utils.sendAlert(getActivity(),"Input error", "Please Enter The Plaintext First!");
             return;
         }
         if(key.equals("")) {
-            vigenereResultText.setText("Please Enter The Key First!!!");
+            Utils.sendAlert(getActivity(),"Input error", "Please Enter The Key First!");
             return;
         }
-        vigenereResultText.setText("");
 
         plainText = plainText.toUpperCase();
         key = key.toUpperCase();
@@ -134,14 +136,13 @@ public class VigenereCipherFragment extends Fragment implements View.OnClickList
      */
     private void vigenereDecrypt(String cipherText, String key) {
         if(cipherText.equals("")) {
-            vigenereResultText.setText("Please Enter The Ciphertext First!!!");
+            Utils.sendAlert(getActivity(),"Input error", "Please Enter The Ciphertext First!");
             return;
         }
         if(key.equals("")) {
-            vigenereResultText.setText("Please Enter The Key First!!!");
+            Utils.sendAlert(getActivity(),"Input error", "Please Enter The Key First!");
             return;
         }
-        vigenereResultText.setText("");
 
         cipherText = cipherText.toUpperCase();
         key = key.toUpperCase();

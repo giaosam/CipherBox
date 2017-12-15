@@ -119,17 +119,22 @@
         android:background="@color/colorPrimary"
         android:layout_marginTop="5dp"/>
 
-    <MultiAutoCompleteTextView
-        android:id="@+id/routeResultText"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="5dp"
-        android:editable="false"
-        android:textSize="21sp"
-        android:textColor="@color/colorBlack"
-        android:scrollbars="vertical"
-        android:layout_marginTop="5dp"
-        />
+        android:background="@color/colorPrimaryDark">
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/routeResultText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="21sp"
+            android:textColor="@color/colorBlack"
+            android:scrollbars="vertical"
+            android:background="@color/colorWhite"
+            />
+    </LinearLayout>
 
 
 </LinearLayout>

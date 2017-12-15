@@ -118,19 +118,25 @@
         android:textSize="20sp"
         android:gravity="center_vertical"
         android:background="@color/colorPrimary"
-        android:layout_marginTop="5dp"/>
-
-    <MultiAutoCompleteTextView
-        android:id="@+id/vigenereResultText"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="5dp"
-        android:editable="false"
-        android:textSize="21sp"
-        android:textColor="@color/colorBlack"
-        android:scrollbars="vertical"
         android:layout_marginTop="5dp"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/vigenereResultText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="21sp"
+            android:textColor="@color/colorBlack"
+            android:scrollbars="vertical"
+            android:background="@color/colorWhite"
+            />
+    </LinearLayout>
 
 
 </LinearLayout>

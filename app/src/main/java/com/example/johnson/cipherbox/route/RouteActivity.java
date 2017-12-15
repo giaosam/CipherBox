@@ -20,7 +20,7 @@ import com.example.johnson.cipherbox.R;
 public class RouteActivity extends AppCompatActivity implements View.OnClickListener {
     
     private RouteCipherFragment cipherFragment;
-    private RouteCipherFragment othersFragment;
+    private RouteOthersFragment othersFragment;
     private RouteIntroFragment introFragment;
 
     private RadioButton cipherRadioBtn;
@@ -57,7 +57,7 @@ public class RouteActivity extends AppCompatActivity implements View.OnClickList
 
             case R.id.routeOthersRadioBtn:
                 if(othersFragment == null) {
-                    othersFragment = new RouteCipherFragment();
+                    othersFragment = new RouteOthersFragment();
                     transaction.add(R.id.routeActivityLayout, othersFragment);
                 }
 

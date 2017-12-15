@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Please enter the Plaintext or CipherText:"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/routeOthersOriginText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center_vertical"
+        />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_marginTop="5dp"
+       android:background="@color/colorPrimary">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="Please specify the Key:  "
+           android:textColor="@color/colorWhite"
+           android:textSize="20sp"
+           android:gravity="center_vertical"
+          />
+
+       <EditText
+           android:id="@+id/routeOthersKeyLength"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_margin="5dp"
+           android:background="@color/colorWhite"
+           android:hint="Key Length (Row)"
+           android:textSize="20sp"/>
+
+   </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:orientation="horizontal"
+       android:layout_marginLeft="5dp">
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:text="Spiral"
+           android:textSize="20sp"
+           android:textStyle="bold"
+           android:textColor="@color/colorBlack"
+           android:layout_gravity="center_vertical"/>
+
+       <RadioGroup
+           android:id="@+id/routeSpiralRadioGroup"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:gravity="center">
+
+           <RadioButton
+               android:id="@+id/routeInwardRadioBtn"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:checked="true"
+               android:text="Inward"
+               android:textSize="20sp"
+               android:layout_gravity="center_vertical"/>
+
+           <RadioButton
+               android:id="@+id/routeOutwardRadioBtn"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="match_parent"
+               android:clickable="false"
+               android:text="outward"
+               android:textSize="20sp"
+               android:layout_gravity="center_vertical"/>
+
+       </RadioGroup>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Direct"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center_vertical"/>
+
+        <RadioGroup
+            android:id="@+id/routeClockRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <RadioButton
+                android:id="@+id/routeClockRadioBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Clockwise"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+            <RadioButton
+                android:id="@+id/routeAntiClockRadioBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Anti-Clock"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Start  "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center_vertical"/>
+
+        <RadioGroup
+            android:id="@+id/routeStartRadioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <RadioButton
+                android:id="@+id/routeTopRadioBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Top"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+            <RadioButton
+                android:id="@+id/routeBottomRadioBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Bottom"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="           "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_gravity="center_vertical"/>
+
+        <RadioGroup
+            android:id="@+id/routeStartRadioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <RadioButton
+                android:id="@+id/routeLeftRadioBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Left"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+            <RadioButton
+                android:id="@+id/routeRightRadioBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Right"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/routeOthersEncryptLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/normal_button_selector"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/encrypt"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.5"
+                android:layout_height="match_parent"
+                android:text="ENCRYPT"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/routeOthersDecryptLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/normal_button_selector"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/decrypt"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.5"
+                android:layout_height="match_parent"
+                android:text="DECRYPT"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="The result text:"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/routeOthersResultText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:editable="false"
+            android:textSize="21sp"
+            android:textColor="@color/colorBlack"
+            android:scrollbars="vertical"
+            android:background="@color/colorWhite"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
