@@ -117,7 +117,7 @@ public class RouteCipherFragment extends Fragment implements View.OnClickListene
         for(int i = 0; i < resultTextList.size(); i++)
             resultText += resultTextList.get(i);
 
-        Log.d("HHHHHHH", resultText);
+        Log.d("CIPHER TEXT", resultText);
 
         routeResultText.setText(resultText);
     }
@@ -127,9 +127,6 @@ public class RouteCipherFragment extends Fragment implements View.OnClickListene
         int totalLength = cipherText.length();
         int column = key.length();
         int row = totalLength / column;
-
-        Log.d("ROW!!!!!!", Integer.toString(row));
-        Log.d("COLUMN!!!", Integer.toString(column));
 
         char[] cipherTextArray = cipherText.toCharArray();
         char[] keyArray = key.toCharArray();
